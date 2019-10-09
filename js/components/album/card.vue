@@ -102,6 +102,10 @@ export default {
       const ghost = document.getElementById('dragGhost')
       ghost.innerText = `All ${pluralize(songIds.length, 'song')} in ${this.album.name}`
       e.dataTransfer.setDragImage(ghost, 0, 0)
+    },
+
+    notGood: function() {
+        return true;
     }
   }
 }
